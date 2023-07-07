@@ -19,7 +19,10 @@ Nagios Windows_SSH Monitoring Plugin
 
 ## POWERSHELL PARAMETERS
 #### metric
-- The Processor Metric you would like to evaluate. User = Percent User Time (Default), Proc = Percent Processor Time, Priv = Percent Privileged Time 
+- The Processor Metric you would like to evaluate.
+  - User = Percent User Time (Default)
+  - Proc = Percent Processor Time
+  - Priv = Percent Privileged Time 
 
 #### warning
 - The CPU utilization you will tolerate before throwing a WARNING
