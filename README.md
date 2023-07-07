@@ -1,10 +1,15 @@
 # check_cpu_utilization.ps1.py
+Nagios Windows_SSH Monitoring Plugin 
 
 ## DESCRIPTION
-A PowerShell based plugin for Nagios and Nagios-like systems. This plugin checks the CPU utilization on Windows machines via evaluation of the Process Performce Counters. 
-This plugin gives you the CPU Utilization for the system, across all cores.
-Remember, thresholds violations result when a metric value is "equal to or greater than" the threshold provided.
-E.g. -warning 10 will need the number of files to be equal to 10 or higher to throw a WARNING.
+- This plugin monitors the CPU utilization on Windows machines via evaluation of the Process Performce Counters.
+  - \Processor(_Total)\% User Time
+  - \Processor(_Total)\% Processor Time
+  - \Processor(_Total)\% Privileged Time
+      
+- This plugin gives you the CPU Utilization for the system, across all cores.
+- Threshold violations result when a metric value is "equal to or greater than" the thresholds provided.
+  - E.g. -warning 10 will need the number of files to be equal to 10 or higher to throw a WARNING.
 
 ### SYNOPSIS
 - A PowerShell based plugin to check CPU Utilization via Windows Processor Performance Counters
